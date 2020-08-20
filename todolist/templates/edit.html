@@ -7,7 +7,7 @@
 {% block content %}
 <div class="container">
   <br>
-  {% if task_obj.manager==request.user %}
+  {% if task_obj.manager == request.user %}
   <form method="POST" class="row">
     {% csrf_token %}
     <label class="col-lg-2"></label>
